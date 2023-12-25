@@ -24,7 +24,7 @@ pitch2.Octave = 0.5
 local pitch3 = Instance.new("PitchShiftSoundEffect")
 pitch3.Parent = cue1
 pitch3.Octave = 0.5
-cue1.Volume = 0.9
+cue1.Volume = 10
 cue1:Play()
 local cue2 = Instance.new("Sound")
 cue2.Parent = game.Workspace
@@ -56,7 +56,7 @@ scare.Parent = game.Workspace
 scare.Name = "MyEarsBurn"
 scare.SoundId = "rbxassetid://5567523008"
 scare.PlaybackSpeed = 3
-scare.Volume = 1
+scare.Volume = 10
 
 local shift = Instance.new("PitchShiftSoundEffect")
 shift.Octave = 0.5
@@ -76,12 +76,12 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 600, -- Percentage, 100 = default Rush speed
+    Speed = 2000, -- Percentage, 100 = default Rush speed
     DelayTime = 1.4, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
     BreakLights = true,
-    KillRange = 300,
+    KillRange = 3000,
     BackwardsMovement = true,
     FlickerLights = {
         false, -- Enabled
@@ -152,7 +152,7 @@ spawn:Play()
     local move = GetGitSound("https://github.com/check78/worldcuuuup/blob/main/DoomBegin.mp3?raw=true","Reboun")
     move.Parent = bruh
     move.Name = "ReboundMoving"
-    move.Volume = 0
+    move.Volume = 10
     move.Looped = true
 local vroom = TweenService:Create(move, TweenInfo.new(2),{Volume = 0.2})
     local distort = Instance.new("DistortionSoundEffect")
@@ -229,7 +229,7 @@ scare.Parent = game.Workspace
 scare.Name = "MyEarsBurn"
 scare.SoundId = "rbxassetid://5567523008"
 scare.PlaybackSpeed = 3
-scare.Volume = 9
+scare.Volume = 10
 
 local shift = Instance.new("PitchShiftSoundEffect")
 shift.Octave = 0.5
@@ -248,12 +248,12 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 600, -- Percentage, 100 = default Rush speed
+    Speed = 2000, -- Percentage, 100 = default Rush speed
     DelayTime = 1.4, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
     BreakLights = true,
-    KillRange = 300,
+    KillRange = 3000,
     BackwardsMovement = true,
     FlickerLights = {
         false, -- Enabled
