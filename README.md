@@ -30,7 +30,7 @@ local cue2 = Instance.new("Sound")
 cue2.Parent = game.Workspace
 cue2.Name = "Spawn"
 cue2.SoundId = "rbxassetid://9114221327"
-cue2.Volume = 3
+cue2.Volume = 10
 cue2:Play()
 local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
 local camara = game.Workspace.CurrentCamera
@@ -67,7 +67,7 @@ distort.Parent = scare
 distort.Level = 1
 
 local TweenService = game:GetService("TweenService")
-local spookee = TweenService:Create(scare, TweenInfo.new(0.3),{Volume = 0})
+local spookee = TweenService:Create(scare, TweenInfo.new(0.3),{Volume = 10})
 
 local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
@@ -76,9 +76,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 2000, -- Percentage, 100 = default Rush speed
+    Speed = 3000, -- Percentage, 100 = default Rush speed
     DelayTime = 1.4, -- Time before starting cycles (seconds)
-    HeightOffset = 0,
+    HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
     KillRange = 3000,
@@ -145,7 +145,7 @@ local spawn = Instance.new("Sound")
 spawn.Parent = bruh
 spawn.Name = "ReboundSpawn"
 spawn.SoundId = "rbxassetid://9114221327"
-spawn.Volume = 5
+spawn.Volume = 10
 spawn.RollOffMaxDistance = 10000
 spawn.RollOffMinDistance = 450
 spawn:Play()
@@ -248,9 +248,9 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 2000, -- Percentage, 100 = default Rush speed
+    Speed = 3000, -- Percentage, 100 = default Rush speed
     DelayTime = 1.4, -- Time before starting cycles (seconds)
-    HeightOffset = 0,
+    HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
     KillRange = 3000,
@@ -276,11 +276,11 @@ local entity = Creator.createEntity({
             Shake = false,
             Sound1 = {
                 0, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Sound2 = {
                 5567523008, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Flashing = {
                 true, -- Enabled
@@ -324,7 +324,7 @@ spawn:Play()
     local move = GetGitSound("https://github.com/check78/worldcuuuup/blob/main/DoomBegin.mp3?raw=true","Reboun")
     move.Parent = bruh
     move.Name = "ReboundMoving"
-    move.Volume = 0
+    move.Volume = 10
     move.Looped = true
 local vroom = TweenService:Create(move, TweenInfo.new(2),{Volume = 0.2})
     local distort = Instance.new("DistortionSoundEffect")
