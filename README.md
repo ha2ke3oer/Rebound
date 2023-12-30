@@ -89,7 +89,7 @@ local entity = Creator.createEntity({
     },
     Cycles = {
         Min = 1,
-        Max = 1
+        Max = 2
     },
     CamShake = {
         true, -- Enabled
@@ -116,8 +116,8 @@ local entity = Creator.createEntity({
             },
             Tease = {
                 false, -- Enabled ('false' if you don't want tease)
-                Min = 1,
-                Max = 3,
+                Min = 6,
+                Max = 6,
             },
         },
     },
