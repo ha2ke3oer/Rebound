@@ -76,20 +76,20 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 3000, -- Percentage, 100 = default Rush speed
-    DelayTime = 1.4, -- Time before starting cycles (seconds)
+    Speed = 30000, -- Percentage, 100 = default Rush speed
+    DelayTime = 1, -- Time before starting cycles (seconds)
     HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
-    KillRange = 3000,
+    KillRange = 30000,
     BackwardsMovement = true,
     FlickerLights = {
         false, -- Enabled
-        2.5, -- Time (seconds)
+        0, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
-        Max = 2
+        Min = 2,
+        Max = 3
     },
     CamShake = {
         true, -- Enabled
@@ -104,11 +104,11 @@ local entity = Creator.createEntity({
             Shake = false,
             Sound1 = {
                 0, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Sound2 = {
                 5567523008, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Flashing = {
                 true, -- Enabled
@@ -207,7 +207,7 @@ end
 -- Run the created entity
 Creator.runEntity(entity)
 
-local randomnumber = math.random(3,5)
+local randomnumber = math.random(5,5)
 print(randomnumber)
 
 for i = 3,randomnumber do
@@ -248,20 +248,20 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
-    Speed = 3000, -- Percentage, 100 = default Rush speed
-    DelayTime = 1.4, -- Time before starting cycles (seconds)
+    Speed = 30000, -- Percentage, 100 = default Rush speed
+    DelayTime = 1, -- Time before starting cycles (seconds)
     HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
-    KillRange = 3000,
+    KillRange = 30000,
     BackwardsMovement = true,
     FlickerLights = {
         false, -- Enabled
         0.1, -- Time (seconds)
     },
     Cycles = {
-        Min = 1,
-        Max = 1
+        Min = 3,
+        Max = 3
     },
     CamShake = {
         true, -- Enabled
