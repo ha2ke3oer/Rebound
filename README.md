@@ -55,7 +55,7 @@ local scare = Instance.new("Sound")
 scare.Parent = game.Workspace
 scare.Name = "MyEarsBurn"
 scare.SoundId = "rbxassetid://5567523008"
-scare.PlaybackSpeed = 3
+scare.PlaybackSpeed = 2
 scare.Volume = 10
 
 local shift = Instance.new("PitchShiftSoundEffect")
@@ -77,7 +77,7 @@ local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
     Speed = 30000, -- Percentage, 100 = default Rush speed
-    DelayTime = 1, -- Time before starting cycles (seconds)
+    DelayTime = 3, -- Time before starting cycles (seconds)
     HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
@@ -88,8 +88,8 @@ local entity = Creator.createEntity({
         0, -- Time (seconds)
     },
     Cycles = {
-        Min = 2,
-        Max = 3
+        Min = 1,
+        Max = 2
     },
     CamShake = {
         true, -- Enabled
@@ -210,7 +210,7 @@ Creator.runEntity(entity)
 local randomnumber = math.random(5,5)
 print(randomnumber)
 
-for i = 3,randomnumber do
+for i = 5,randomnumber do
 	game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 wait(1)
 
@@ -249,7 +249,7 @@ local entity = Creator.createEntity({
     CustomName = "Rebound", -- Custom name of your entity
     Model = "rbxassetid://12403179451", -- Can be GitHub file or rbxassetid
     Speed = 30000, -- Percentage, 100 = default Rush speed
-    DelayTime = 1, -- Time before starting cycles (seconds)
+    DelayTime = 3, -- Time before starting cycles (seconds)
     HeightOffset = 4,
     CanKill = true,
     BreakLights = true,
